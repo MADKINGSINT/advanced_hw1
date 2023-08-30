@@ -1,31 +1,31 @@
 @import 'vars';
+@import 'cart';
+@import 'reg';
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
 }
 .container{
-    
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 .center{
-	padding-left: calc(50% - width / 2);
-	padding-right: calc(50% - width / 2);
+	padding-left: calc(50% - $width / 2);
+	padding-right: calc(50% - $width / 2);
 }
 .header{
+    width: 100%;
     height: 75px; 
     background-color: $headerFooterColor;
     align-items: center;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     &_left{
-        padding-left: 5%;
         gap: 41px;
     }
     &_right{
-        padding-right: 239px;
         gap: 42px;
     }
     
@@ -44,12 +44,10 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-    width: 100%;
     height: 148px;
     background-color: #F8F3F4;
 }
 .crumbs_h1{
-    padding-left: 230px;
     color: $pinkTextColor;
     font-family: Lato;
     font-size: 24px;
@@ -58,7 +56,7 @@
     line-height: normal; 
 }
 .crumbs_h3{
-    padding-right: 10%;
+
     color: $greyTextColor;
     font-family: Lato;
     font-size: 14px;
@@ -90,7 +88,7 @@
     display: flex;
     flex-direction: column;
     border: 1px light grey;
-    padding-left: 16%;
+
     position: relative;
     width: 1141px;
     height: 601px; 
@@ -274,7 +272,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+
     height: 448px;
     background-color: rgba(244, 244, 244, 0.70);
 }
@@ -306,14 +304,14 @@
 }
 .form{
     &_title{
-        padding-right: 0px;
+        
         text-align: center;
         width: 557px;
         height: 61px;
         
     }
     &_h1{
-        margin-right: 50px;
+        
         color: #222224;
         text-align: center;
         font-family: Lato;

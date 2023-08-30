@@ -1,0 +1,115 @@
+@import 'vars';
+@import 'cart';
+.reg{
+    display: flex;
+    
+   
+
+    .left{
+        &__title{
+            padding-top: 64px;
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &__input{
+            margin-top: 20px;
+            border: 1px solid #B1B1B1;
+            width: 360px;
+            height: 45px; 
+            color: #B1B1B1;
+            font-family: Lato;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &__checkbox{
+            align-items: center;
+            margin-top: 10px;
+            width: 17px;
+            height: 17px; 
+            &_text{
+                margin-left: 5px;
+                color: #000;
+                font-family: Lato;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+        &__text{
+            width: 359px;
+            margin-top: 15px;
+            color: #B1B1B1;
+            font-family: Lato;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &__btn{
+            cursor: pointer;
+            margin-top: 39px;
+            background-color: $pinkTextColor;
+            width: 167px;
+            height: 50px; 
+            border: none;
+
+            &_text{
+                color: #FFF;
+                font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &_img{
+                margin-left: 20px;
+            }
+
+        }
+        
+    }
+    .right{
+
+        &__title{
+            margin-top: 64px;
+            color: #000;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &__subtitle{
+            margin-top: 22px;
+            width: 652px;
+            color: #000;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &__list{
+            
+            margin-left: 30px;
+            margin-top: 21px;
+            list-style-image: url(./img/reg_list_marker.svg);
+            &_item{
+                margin-top: 16px;
+                color: #000;
+                font-family: Lato;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+}
