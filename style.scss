@@ -380,4 +380,19 @@
     height: 32px; 
     background-color: #fff;
 }
+@media(max-width: 768px){
+    .search_icon{
+        padding-left: 30px;
+    }
+    .lk_icon{
+        visibility: hidden;
 
+    }
+    .cart_icon{
+        visibility: hidden;
+    }
+    .menu{
+        padding-left: 70%;
+    }
+
+}

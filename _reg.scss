@@ -2,10 +2,12 @@
 @import 'cart';
 .reg{
     display: flex;
+    gap: 16px;
     
    
 
     .left{
+        
         &__title{
             padding-top: 64px;
             color: #222;
@@ -28,11 +30,14 @@
             line-height: normal;
         }
         &__checkbox{
-            align-items: center;
+
+            
             margin-top: 10px;
             width: 17px;
             height: 17px; 
             &_text{
+                height: 10px;
+                
                 margin-left: 5px;
                 color: #000;
                 font-family: Lato;
@@ -112,4 +117,47 @@
             }
         }
     }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .crumbs{
+        &_h1{
+            padding-left: 16px;
+        }
+    }
+    .reg{
+        display: flex;
+        .left{
+
+        
+            padding-left: 16px;
+        }
+        .right{
+            &__title{
+                font-size: 16px;
+            }
+            &__subtitle{
+                width: 354px;
+                font-size: 16px;
+            }
+            &__list{
+                font-size: 16px;
+            }
+            padding-right: 16px;
+        }
+
+    }
+
+}
+@media(max-width: 768px){
+    .lk_icon{
+        visibility: hidden;
+
+    }
+    .cart_icon{
+        visibility: hidden;
+    }
+    .menu{
+        padding-right: 26px;
+    }
+
 }
