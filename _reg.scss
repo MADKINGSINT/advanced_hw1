@@ -123,6 +123,9 @@
         &_h1{
             padding-left: 16px;
         }
+        &_h3{
+            padding-right: 50px;
+        }
     }
     .reg{
         display: flex;
@@ -146,6 +149,9 @@
         }
 
     }
+    .footer{
+        
+    }
 
 }
 @media(max-width: 768px){
@@ -153,11 +159,40 @@
         visibility: hidden;
 
     }
+    .header_left{
+        padding-left:   50px;
+    }
+    .header_right{
+        padding-right: 50px;
+    }
+    .crummbs_h3{
+        
+    }
     .cart_icon{
         visibility: hidden;
     }
     .menu{
         padding-right: 26px;
     }
+    .reg{
+        flex-direction: column;
+        justify-content: center;
+        .left{
+            padding-left: 10vw;
+  
+        }
+        .right{
+            padding-left: 10vw;
+            &__subtitle{
+                width: 85vw;
+            }
+        }
+    }
+    .footer{
+        
+    }
+
+
+
 
 }
