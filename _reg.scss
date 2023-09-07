@@ -29,10 +29,15 @@
             font-weight: 300;
             line-height: normal;
         }
+        &__box_checkbox{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
         &__checkbox{
 
             
-            margin-top: 10px;
+           
             width: 17px;
             height: 17px; 
             &_text{
@@ -46,6 +51,9 @@
                 font-weight: 300;
                 line-height: normal;
             }
+        }
+        &__checkbox2{
+            
         }
         &__text{
             width: 359px;
@@ -118,7 +126,7 @@
         }
     }
 }
-@media(min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px){
     .crumbs{
         &_h1{
             padding-left: 16px;
@@ -126,32 +134,30 @@
         &_h3{
             padding-right: 50px;
         }
+
     }
     .reg{
-        display: flex;
-        .left{
-
-        
-            padding-left: 16px;
-        }
         .right{
-            &__title{
-                font-size: 16px;
-            }
+            display: flex;
+           justify-content: center;
+            flex-wrap:  wrap;
+            align-items: center;
             &__subtitle{
-                width: 354px;
-                font-size: 16px;
+               max-width: 370px;
             }
             &__list{
-                font-size: 16px;
+                max-width: 311px;
             }
-            padding-right: 16px;
         }
+        .left{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
-    }
-    .footer{
-        
-    }
+
 
 }
 @media(max-width: 768px){
@@ -165,9 +171,7 @@
     .header_right{
         padding-right: 50px;
     }
-    .crummbs_h3{
-        
-    }
+
     .cart_icon{
         visibility: hidden;
     }
@@ -177,20 +181,30 @@
     .reg{
         flex-direction: column;
         justify-content: center;
+        
         .left{
-            padding-left: 10vw;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            
   
         }
         .right{
-            padding-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            flex-wrap:  wrap;
+            align-items: center;
             &__subtitle{
                 width: 85vw;
             }
+            &__list{
+                margin-left: 50px;
+
+            }
         }
     }
-    .footer{
-        
-    }
+
 
 
 

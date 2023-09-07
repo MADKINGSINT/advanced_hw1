@@ -158,7 +158,7 @@
             &_btn{
                 cursor: pointer;
                 margin-top: 33px;
-                margin-left: 105px;
+                margin-left: 30%;
                 width: 101.408px;
                 height: 35px;
                 border: 1px solid #A4A4A4; 
@@ -270,6 +270,9 @@
     }
 }
 .form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     &_title{
         padding-right: 0px;
         text-align: center;
@@ -383,17 +386,16 @@
             &_form{
 
              
-                &_title{
-                  
-                }
-                &_btn{
-                   
-                }
+   
                 &_input{
                     margin-left: 10px;
                     margin-right: 10px;
                 }
+                &_btn{
+                    margin-left: 10px;
+                }
             }
+
             &_total{
                 margin-top: 90px;
                 margin-left: 0px;
@@ -421,9 +423,7 @@
             &_h3{
                 margin-left: 10%;
             }
-            &_buttons{
 
-            }
         }
     }
     .footer{
@@ -449,9 +449,9 @@
         flex-direction: column;
         &_left{
             &_product{
-                width: 500px;
+                max-width: 500px;
                 height: 188px;
-                margin-left: 5%;
+                
                 &_text{
                     width: 143px;
                     &_title{
@@ -491,27 +491,39 @@
         }
 
         &_right{
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            &_box{
+                width: 100%;
+                display: flex;
+                justify-content: start;
+            }
             &_form{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
                 
                 &_title{
-                    margin-left: 38%;
+                    margin-left: 0px !important;
                 }
                 &_btn{
-                    margin-left: 20%;
+                    margin-left: 0px !important;
+                    justify-content: start;
+                    align-content: start;
+                    
                 }
                 &_input{
-                    margin-left: 10%;
+                    margin-left: 0px !important;
                 }
             }
             &_total{
-                margin-left: 10%;
+                margin-left: 0px !important;
             }
         }
     }
-    .footer{
-       
-    }
+
 
     .down{
         margin-top: 60px;
@@ -522,24 +534,14 @@
         }
         .form{
             
-            &_title{
-                
-            }
+
             
             justify-content: center;
             &_input{
                 
                 margin-left: 25%;
             }
-            &_h1{
-             
-            }
-            &_h3{
-   
-            }
-            &_buttons{
-              
-            }
+
         }
     }
     .footer{
